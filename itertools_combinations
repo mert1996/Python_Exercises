@@ -1,0 +1,19 @@
+from itertools import combinations
+
+string = input().split()
+
+empty = []
+for i in range(1,int(string[1])+1):
+    comb = list(combinations(str(string[0]),i))
+    empty_list = []
+    for tupleA in comb:
+        a = sorted(list(tupleA))
+        bos_str = ""
+        for harf in a:
+            bos_str += harf
+        empty_list.append(bos_str)
+    empty_list.sort()
+    empty = [*empty, *empty_list]
+
+for element in empty:
+    print(element)
