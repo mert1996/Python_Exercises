@@ -10,13 +10,13 @@ for i in numbers:
         break
     else:
         condition = False
-        
+
 for i in numbers:
-    if i >0:
+    if i > 0:
         pass
     else:
         condition = False
 
-
-
 print(condition)
+
+print("this is the comment line")
